@@ -1,4 +1,5 @@
 import Usuario from './pages/usuario.js';
+import Agendamento from './pages/agendamento.js'
 
 const main = document.querySelector('#root');
 
@@ -9,6 +10,11 @@ function init(){
 }
 
 window.addEventListener("load", ()=>{
-    main.appendChild(Usuario());
+   if(window.location.pathname == '/administracao.html') {
+       main.appendChild(Agendamento());    
+   }
+    else {
+        main.appendChild(Usuario());
+    }
     init();
 });
