@@ -34,7 +34,7 @@ export default() => {
                     <div class="form-group row">
                         <label for="inputCNS" class="col-sm-2 col-form-label">CNS:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control-plaintext" id="inputCNS" placeholder="Email" value="1112223334"> 
+                            <input type="text" class="form-control-plaintext" id="inputCNS" placeholder="CNS" value="1815049"> 
                         </div>
                     </div>
                     <div class="form-group row">
