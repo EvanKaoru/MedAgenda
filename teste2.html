@@ -5,14 +5,15 @@
 
 <Style>
     .card:hover {border: 1px dashed gray; background-color: lightblue;  cursor:pointer }
+    .agendado {background-color: rgba(173, 230, 202, 0.31);}
 </Style>
 </head>
 
 <body>
     <div class="container">
     <div class="row row-cols-2 row-cols-md-2 g-3">
-        <div class="col" style="width: 18rem;">
-        <div class="card" id="card_01">
+        <div class="col" style="width: 18rem; display: none;" id="a1">
+          <div class="card" id="card_01">
             <img src="./img/undraw_Booking_re_gw4j.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Erick Ayres</h5>
@@ -21,7 +22,7 @@
           </div>
         </div>
         <div class="col" style="width: 18rem;">
-          <div class="card" id="card_02">
+          <div class="card agendado" id="card_02">
             <img src="./img/undraw_Booking_re_gw4j.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Thaís Thame</h5>
@@ -39,7 +40,7 @@
           </div>
         </div>
         <div class="col" style="width: 18rem;">
-          <div class="card" id="card_04">
+          <div class="card agendado" id="card_04">
             <img src="./img/undraw_Booking_re_gw4j.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pedro Serafino</h5>
@@ -57,7 +58,7 @@
             </div>
         </div>
         <div class="col" style="width: 18rem;">
-            <div class="card" id="card_06">
+            <div class="card agendado" id="card_06">
               <img src="./img/undraw_Booking_re_gw4j.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Daniel Santos</h5>
@@ -100,10 +101,10 @@
           <b>CNS:</b>1815049<br>
           <b>Contato:</b>9 9707 1589</p>
           <hr>
-          <p><b>Dor:</b></p>
-          <p><b>Alergia:</b></p>
-          <p><b>Remédios:</b></p>
-          <p><b>Tempo:</b></p>
+          <p><b>Dor:</b> Pontada no peito</p>
+          <p><b>Alergia:</b> Calmantes</p>
+          <p><b>Remédios:</b> Losartana</p>
+          <p><b>Tempo: </b> desde ontem</p>
           <hr>
 
           <div class="container">
@@ -128,7 +129,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" id="Fechar">Cancelar</button>
-          <button type="button" class="btn btn-primary">Agendar</button>
+          <button type="button" class="btn btn-primary" onclick="execAgendamento()">Agendar</button>
         </div>
       </div>
     </div>
@@ -136,10 +137,21 @@
   <script>
     const cardx = document.querySelector('#card_01');
     const Modal1 = new bootstrap.Modal(document.getElementById('exampleModalLong'), {});
+    
+    setTimeout(() => {
+      document.querySelector('#a1').style.display = '';
+    }, 30000);
 
     cardx.addEventListener("click", showDialog);
     function showDialog(){
       Modal1.show();
+    }
+
+    function execAgendamento(){
+      setTimeout(()=>{},1000);
+      alert('Agendamento realizado com sucesso');
+      document.querySelector('#card_01').className = 'card agendado';
+      Modal1.hide();
     }
   </script>
 </body>
