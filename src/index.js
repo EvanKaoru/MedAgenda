@@ -7,8 +7,10 @@ const main = document.querySelector('#root');
 function init(){
     window.addEventListener("hashchange", ()=>{
         console.log(window.location.hash);
-        main.innerHTML = "";
-        main.appendChild(Consultas());
+        if (window.location.hash == "#consultas"){
+            main.innerHTML = "";
+            main.appendChild(Consultas());
+        }
     })
 }
 
