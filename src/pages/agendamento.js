@@ -6,7 +6,6 @@ export default() => {
     .card:hover {border: 1px dashed gray; background-color: lightblue;  cursor:pointer }
     .agendado {background-color: rgba(173, 230, 202, 0.31);}
 </Style>
-</head>
 
 <body>
     <div class="container">
@@ -124,7 +123,6 @@ export default() => {
             </div>
           </div>
           </div>
-          <!-- <p>e;o<br />Tem enjoo: N&atilde;o<br />Sentindo dor: N&atilde;o</p> -->
 
         </div>
         <div class="modal-footer">
@@ -134,13 +132,14 @@ export default() => {
       </div>
     </div>
   </div>
+
   <script>
     const cardx = document.querySelector('#card_01');
     const Modal1 = new bootstrap.Modal(document.getElementById('exampleModalLong'), {});
     
     setTimeout(() => {
-      document.querySelector('#a1').style.display = '';
-    }, 30000);
+      document.querySelector('#a1').style.display = ''
+    }, 1000);
 
     cardx.addEventListener("click", showDialog);
     function showDialog(){
