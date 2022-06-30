@@ -15,7 +15,7 @@ export default() => {
             <img src="./img/undraw_No_data_re_kwbl.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Dr. Fernando França</h5>
-              <p class="card-text"><p class="card-text">07/07/2022 - 11:22</p>
+              <p class="card-text"><p class="card-text">07/07/2022 às 11:22</p>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@ export default() => {
             <img src="./img/undraw_No_data_re_kwbl.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Dr. Mario Gomes</h5>
-              <p class="card-text">18/06/2022 - 14:32</p>
+              <p class="card-text">18/06/2022 às 14:32</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default() => {
             <img src="./img/undraw_No_data_re_kwbl.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Clinico geral</h5>
-              <p class="card-text">18/06/2022 - 10:30</p>
+              <p class="card-text">18/06/2022 às 10:30</p>
             </div>
           </div>
         </div>
