@@ -84,6 +84,7 @@ export default() => {
             <div class="form-group row">
               <label> Data Agendamento: </label>
               <input type="date">
+              <input type="time">
             </div>
           <div class="form-group row">
             <label> Médico: </label>
