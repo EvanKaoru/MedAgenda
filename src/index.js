@@ -14,7 +14,7 @@ function init(){
 
 window.addEventListener("load", ()=>{
    if(window.location.pathname == '/administracao.html') {
-       main.appendChild(Agendamento());    
+      // main.appendChild(Agendamento());    
    }
     else {
         main.appendChild(Usuario());

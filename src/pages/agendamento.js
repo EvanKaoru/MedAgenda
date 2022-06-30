@@ -3,12 +3,12 @@ export default() => {
 
     const pagina = `
     <Style>
-    .card:hover {border: 1px dashed gray; background-color: lightblue;  cursor:pointer }
-    .agendado {background-color: rgba(173, 230, 202, 0.31);}
-</Style>
+      .card:hover {border: 1px dashed gray; background-color: lightblue;  cursor:pointer }
+      .agendado {background-color: rgba(173, 230, 202, 0.31);}
+    </Style>
 
-<body>
     <div class="container">
+    <h3>Agendamentos</h3>
     <div class="row row-cols-2 row-cols-md-2 g-3">
         <div class="col" style="width: 18rem; display: none;" id="a1">
           <div class="card" id="card_01">
@@ -133,12 +133,14 @@ export default() => {
     </div>
   </div>
 
+  <script>alert('teste');</script>
+
   <script>
     const cardx = document.querySelector('#card_01');
     const Modal1 = new bootstrap.Modal(document.getElementById('exampleModalLong'), {});
-    
+
     setTimeout(() => {
-      document.querySelector('#a1').style.display = ''
+      document.querySelector('#a1').style.display = '';
     }, 1000);
 
     cardx.addEventListener("click", showDialog);
